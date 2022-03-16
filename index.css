@@ -48,10 +48,16 @@ body{
     padding: 1rem 1rem 1rem 4rem;
 }
 
+.content-body.landing-page {
+    display: flex;
+    flex-direction: column;
+    margin: 10rem 4rem;
+}
+
 .content-body {
     display: flex;
     flex-direction: column;
-    margin: 0 8rem;
+    margin: 8rem 8rem;
 }
 
 .landing-page-content {
@@ -59,11 +65,12 @@ body{
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .landing-page-content .side-image {
-    width: 50%;
+    width: 45%;
+    object-fit: contain;
 }
 
 .btn {
@@ -72,8 +79,9 @@ body{
 }
 
 .section-body {
-    padding: 0 1rem 0 1rem;
-    margin: 1rem;
+    margin: 1.5rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .section-title {
@@ -83,14 +91,16 @@ body{
     font-weight: bolder;
 }
 
+.section-group-tiles {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .section-tile {
     margin: 1.5rem;
 }
 
-.section-group-tiles {
-    display: flex;
-    justify-content: center;
-}
 
 .footer-body {
     margin-top: 10rem;
@@ -178,6 +188,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    margin-left: 4rem;
 }
 
 .side-content .side-content-header {
@@ -186,4 +197,8 @@ body{
 
 .side-content .side-content-description {
     font-size: 2rem;
+}
+
+.card-wishlist {
+    right: 2.5rem;
 }
