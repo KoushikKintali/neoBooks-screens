@@ -200,5 +200,23 @@ body{
 }
 
 .card-wishlist {
-    right: 2.5rem;
+    right: 3.5rem;
+}
+
+.card-footer {
+    width: 100%;
+    align-items: center;
+}
+
+.card-body {
+    align-items: center;
+}
+
+.card-btn-group {
+    align-items: center;
+    width: 100%;
+}
+
+.btn {
+    width: 100%;
 }
