@@ -58,6 +58,7 @@ body{
     display: flex;
     flex-direction: column;
     margin: 8rem 8rem;
+    height: 100%;
 }
 
 .landing-page-content {
@@ -71,11 +72,6 @@ body{
 .landing-page-content .side-image {
     width: 45%;
     object-fit: contain;
-}
-
-.btn {
-    background-color: var(--color-brn-500);
-    color: var(--color-brn-700);
 }
 
 .section-body {
@@ -153,6 +149,10 @@ body{
     box-shadow: var(--color-box-shadow) 0px 2px 8px 0px;;
 }
 
+.card-price {
+    justify-content: center;
+}
+
 .btn-categories {
     background-color: transparent;
     padding: 0;
@@ -160,6 +160,14 @@ body{
 
 .card-btn-group {
     gap: 0.2rem;
+}
+
+.card-btn-group .btn {
+    width: 100%;
+}
+
+.card-btn-group .btn-categories {
+    width: fit-content;
 }
 
 .card-img .category-img {
@@ -203,20 +211,71 @@ body{
     right: 3.5rem;
 }
 
-.card-footer {
-    width: 100%;
-    align-items: center;
-}
-
 .card-body {
     align-items: center;
 }
 
 .card-btn-group {
     align-items: center;
+    justify-content: center;
     width: 100%;
 }
 
+.card-quantity {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.card-quantity .quantity-input {
+    width: 4rem;
+    text-align: center;
+}
+
+.card-quantity button {
+    background-color: transparent;
+    font-size: 2rem;
+}
+
+.card-horizontal .card-btn-group {
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.card-horizontal .card-body {
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.card-horizontal .card-price {
+    align-items: baseline;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
 .btn {
-    width: 100%;
+    color: var(--color-brn-700);
+}
+
+.btn-fill {
+    background-color: var(--color-brn-500);
+    color: var(--color-brn-800);;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: thin solid var(--color-brn-500);
+    color: var(--color-brn-500);
+}
+
+.btn-outline:hover {
+    background-color: var(--color-brn-500);
+    color: var(--color-brn-800);
+}
+
+hr {
+    border-top: 1px solid var(--color-brn-700);
+    margin: 0.5rem 0;
 }
