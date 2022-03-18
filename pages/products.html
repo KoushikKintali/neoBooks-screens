@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>neoBooks</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+    <link rel="stylesheet" href="../index.css"></link>
+    <link rel="stylesheet" href="../main.css"></link>
+    <link rel="stylesheet" href="../stylesheet/products.css"></link>
+</head>
+<body>
+    <nav class="nav">
+        <a class="nav-logo" src="" alt="logo">
+            <img class="logo" src="../assets/logo.png" alt="logo">
+        </a>
+        <div class="nav-search">
+            <span class="material-icons-outlined search-icon">
+                search
+            </span>
+            <input class="search-input" placeholder="Titles, author, or topics"/>
+        </div>
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Login</a>
+            </li>
+            <li class="badge nav-item">
+                <span class="material-icons-outlined icon">favorite_border</span>
+                <span class="badge-count">1</span>
+            </li>                
+            <li class="badge nav-item">
+                <span class="material-icons-outlined icon">shopping_cart</span>
+                <span class="badge-count">1</span>
+            </li>
+        </ul>
+    </nav>
+    <main class="content-body products-body">
+        <section class="filters-body">
+            <div class="filter-title">
+                <p class="title">Filters</p>
+                <p class="clear">Clear</p>
+            </div>
+            <div class="price-group">
+                <p>Price</p>
+                <div class="slider-component">
+                    <span class="slider-value-min" id="silder-min-value">0</span>
+                    <input type="range" min="0" max="100" id="slider" class="slider" value=0>
+                    <span class="slider-value-max" id="silder-max-value">100</span>
+                </div>
+            </div>
+            <div class="category-group">
+                <p class="title">Category</p>
+                <ul class="category-group-list">
+                    <li><input type="checkbox"> Category1</li></li>
+                    <li><input type="checkbox"> Category1</li></li>
+                    <li><input type="checkbox"> Category1</li></li>
+                    <li><input type="checkbox"> Category1</li></li>
+                    <li><input type="checkbox"> Category1</li></li>
+                    <li><input type="checkbox"> Category1</li></li>
+                    <li><input type="checkbox"> Category1</li></li>
+                    <li><input type="checkbox"> Category1</li></li>
+                    <li><input type="checkbox"> Category1</li></li>
+                </ul>
+            </div>
+            <div class="rating-group">
+                <p class="title">Rating</p>
+                <div class="rating-group-list">
+                    <div class="rating">
+                        <span class="material-icons-outlined rating-element">star</span>
+                        <span class="material-icons-outlined rating-element">star</span>
+                        <span class="material-icons-outlined rating-element">star</span>
+                        <span class="material-icons-outlined rating-element">star</span>
+                        <span class="material-icons-outlined rating-element">star</span>
+                    </div>
+                    <div class="rating">
+                        <span class="material-icons-outlined">star</span>
+                        <span class="material-icons-outlined rating-element">star</span>
+                        <span class="material-icons-outlined rating-element">star</span>
+                        <span class="material-icons-outlined rating-element">star</span>
+                        <span class="material-icons-outlined rating-element">star</span>
+                    </div>
+                    <div class="rating">
+                        <span class="material-icons-outlined">star</span>
+                        <span class="material-icons-outlined">star</span>
+                        <span class="material-icons-outlined rating-element">star</span>
+                        <span class="material-icons-outlined rating-element">star</span>
+                        <span class="material-icons-outlined rating-element">star</span>
+                    </div>
+                    <div class="rating">
+                        <span class="material-icons-outlined">star</span>
+                        <span class="material-icons-outlined">star</span>
+                        <span class="material-icons-outlined">star</span>
+                        <span class="material-icons-outlined rating-element">star</span>
+                        <span class="material-icons-outlined rating-element">star</span>
+                    </div>
+                    <div class="rating">
+                        <span class="material-icons-outlined">star</span>
+                        <span class="material-icons-outlined">star</span>
+                        <span class="material-icons-outlined">star</span>
+                        <span class="material-icons-outlined">star</span>
+                        <span class="material-icons-outlined rating-element">star</span>
+                    </div>
+                </div>
+            </div>
+            <div class="sort-group">
+                <p class="title">Sort by</p>
+                <div class="sort-group-list">
+                    <div>
+                        <input type="radio"> Price - Low to High
+                    </div>
+                    <div>
+                        <input type="radio"> Price - High to Low
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="all-products-body">
+            <div class="products-section-title">
+                <p class="title">Showing All Products</p>
+                <p class="summary">(Showing 20 products)</p>
+            </div>
+            <div class="section-group-tiles">
+                <div class="card section-tile">
+                    <div class="card-img">
+                        <img src="../assets/test.jpg">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <div class="header">Phones</div>
+                            <div class="category">category</div>
+                        </div>
+                        <div class="card-price">
+                            <div class="discounted-price">₹40</div>
+                            <div class="original-price">₹100</div>
+                            <div class="saved-price">40% off</div>
+                        </div>
+                        <div class="card-btn-group">
+                            <button class="btn btn-fill">Add To Cart</button>
+                        </div>
+                    </div>
+                    <div class="card-wishlist">
+                        <span class="material-icons-outlined">
+                            favorite_border
+                        </span>
+                    </div>
+                </div>
+                <div class="card section-tile">
+                    <div class="card-img">
+                        <img src="../assets/test.jpg">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <div class="header">Phones</div>
+                            <div class="category">category</div>
+                        </div>
+                        <div class="card-price">
+                            <div class="discounted-price">₹40</div>
+                            <div class="original-price">₹100</div>
+                            <div class="saved-price">40% off</div>
+                        </div>
+                        <div class="card-btn-group">
+                            <button class="btn btn-fill">Add To Cart</button>
+                        </div>
+                    </div>
+                    <div class="card-wishlist">
+                        <span class="material-icons-outlined">
+                            favorite_border
+                        </span>
+                    </div>
+                </div>
+                <div class="card section-tile">
+                    <div class="card-img">
+                        <img src="../assets/test.jpg">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <div class="header">Phones</div>
+                            <div class="category">category</div>
+                        </div>
+                        <div class="card-price">
+                            <div class="discounted-price">₹40</div>
+                            <div class="original-price">₹100</div>
+                            <div class="saved-price">40% off</div>
+                        </div>
+                        <div class="card-btn-group">
+                            <button class="btn btn-outline">Go To Cart</button>
+                        </div>
+                    </div>
+                    <div class="card-wishlist is-active">
+                        <span class="material-icons-outlined">
+                            favorite
+                        </span>
+                    </div>
+                </div>
+                <div class="card section-tile">
+                    <div class="card-img">
+                        <img src="../assets/test.jpg">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <div class="header">Phones</div>
+                            <div class="category">category</div>
+                        </div>
+                        <div class="card-price">
+                            <div class="discounted-price">₹40</div>
+                            <div class="original-price">₹100</div>
+                            <div class="saved-price">40% off</div>
+                        </div>
+                        <div class="card-btn-group">
+                            <button class="btn btn-fill">Add To Cart</button>
+                        </div>
+                    </div>
+                    <div class="card-wishlist">
+                        <span class="material-icons-outlined">
+                            favorite_border
+                        </span>
+                    </div>
+                </div>
+                <div class="card section-tile">
+                    <div class="card-img">
+                        <img src="../assets/test.jpg">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <div class="header">Phones</div>
+                            <div class="category">category</div>
+                        </div>
+                        <div class="card-price">
+                            <div class="discounted-price">₹40</div>
+                            <div class="original-price">₹100</div>
+                            <div class="saved-price">40% off</div>
+                        </div>
+                        <div class="card-btn-group">
+                            <button class="btn btn-fill">Add To Cart</button>
+                        </div>
+                    </div>
+                    <div class="card-wishlist">
+                        <span class="material-icons-outlined">
+                            favorite_border
+                        </span>
+                    </div>
+                </div>
+                <div class="card section-tile">
+                    <div class="card-img">
+                        <img src="../assets/test.jpg">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <div class="header">Phones</div>
+                            <div class="category">category</div>
+                        </div>
+                        <div class="card-price">
+                            <div class="discounted-price">₹40</div>
+                            <div class="original-price">₹100</div>
+                            <div class="saved-price">40% off</div>
+                        </div>
+                        <div class="card-btn-group">
+                            <button class="btn btn-fill">Add To Cart</button>
+                        </div>
+                    </div>
+                    <div class="card-wishlist">
+                        <span class="material-icons-outlined">
+                            favorite_border
+                        </span>
+                    </div>
+                </div>
+                <div class="card section-tile">
+                    <div class="card-img">
+                        <img src="../assets/test.jpg">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <div class="header">Phones</div>
+                            <div class="category">category</div>
+                        </div>
+                        <div class="card-price">
+                            <div class="discounted-price">₹40</div>
+                            <div class="original-price">₹100</div>
+                            <div class="saved-price">40% off</div>
+                        </div>
+                        <div class="card-btn-group">
+                            <button class="btn btn-fill">Add To Cart</button>
+                        </div>
+                    </div>
+                    <div class="card-wishlist">
+                        <span class="material-icons-outlined">
+                            favorite_border
+                        </span>
+                    </div>
+                </div>
+                <div class="card section-tile">
+                    <div class="card-img">
+                        <img src="../assets/test.jpg">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <div class="header">Phones</div>
+                            <div class="category">category</div>
+                        </div>
+                        <div class="card-price">
+                            <div class="discounted-price">₹40</div>
+                            <div class="original-price">₹100</div>
+                            <div class="saved-price">40% off</div>
+                        </div>
+                        <div class="card-btn-group">
+                            <button class="btn btn-fill">Add To Cart</button>
+                        </div>
+                    </div>
+                    <div class="card-wishlist">
+                        <span class="material-icons-outlined">
+                            favorite_border
+                        </span>
+                    </div>
+                </div>
+                <div class="card section-tile">
+                    <div class="card-img">
+                        <img src="../assets/test.jpg">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <div class="header">Phones</div>
+                            <div class="category">category</div>
+                        </div>
+                        <div class="card-price">
+                            <div class="discounted-price">₹40</div>
+                            <div class="original-price">₹100</div>
+                            <div class="saved-price">40% off</div>
+                        </div>
+                        <div class="card-btn-group">
+                            <button class="btn btn-fill">Add To Cart</button>
+                        </div>
+                    </div>
+                    <div class="card-wishlist">
+                        <span class="material-icons-outlined">
+                            favorite_border
+                        </span>
+                    </div>
+                </div>
+                <div class="card section-tile">
+                    <div class="card-img">
+                        <img src="../assets/test.jpg">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <div class="header">Phones</div>
+                            <div class="category">category</div>
+                        </div>
+                        <div class="card-price">
+                            <div class="discounted-price">₹40</div>
+                            <div class="original-price">₹100</div>
+                            <div class="saved-price">40% off</div>
+                        </div>
+                        <div class="card-btn-group">
+                            <button class="btn btn-fill">Add To Cart</button>
+                        </div>
+                    </div>
+                    <div class="card-wishlist">
+                        <span class="material-icons-outlined">
+                            favorite_border
+                        </span>
+                    </div>
+                </div>
+                <div class="card section-tile">
+                    <div class="card-img">
+                        <img src="../assets/test.jpg">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-header">
+                            <div class="header">Phones</div>
+                            <div class="category">category</div>
+                        </div>
+                        <div class="card-price">
+                            <div class="discounted-price">₹40</div>
+                            <div class="original-price">₹100</div>
+                            <div class="saved-price">40% off</div>
+                        </div>
+                        <div class="card-btn-group">
+                            <button class="btn btn-fill">Add To Cart</button>
+                        </div>
+                    </div>
+                    <div class="card-wishlist">
+                        <span class="material-icons-outlined">
+                            favorite_border
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer-body">
+        <section class="footer-company-section">
+            <img class="logo" src="../assets/logo.png" alt="logo">
+            <div class="copyright-content">
+                <p>Copyright © 2022 neoBooks</p>
+                <p>All rights reserved</p>
+            </div>
+        </section>
+        <section class="footer-links-section">
+            <section class="footer-section">
+                <div class="footer-title">Categories</div>
+                <ul class="footer-link-group">
+                    <li>Link1</li>
+                    <li>Link1</li>
+                    <li>Link1</li>
+                    <li>Link1</li>
+                </ul>
+            </section>
+            <section class="footer-section">
+                <div class="footer-title">Sitemap</div>
+                <ul class="footer-link-group">
+                    <li>Link1</li>
+                    <li>Link1</li>
+                    <li>Link1</li>
+                    <li>Link1</li>
+                </ul>
+            </section>
+            <section class="footer-section">
+                <div class="footer-title">Sitemap</div>
+                <ul class="footer-link-group">
+                    <li>Link1</li>
+                    <li>Link1</li>
+                    <li>Link1</li>
+                    <li>Link1</li>
+                </ul>
+            </section>
+        </section>
+    </footer>
+    <script src="./products.js" type="text/javascript"></script>
+</body>
+</html>
