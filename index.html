@@ -20,7 +20,7 @@
             </span>
             <input class="search-input" placeholder="Titles, author, or topics"/>
         </div>
-        <ul class="nav-list">
+        <ul class="nav-list nav-icons">
             <li class="nav-item">
                 <a class="nav-link" href="#">Login</a>
             </li>
@@ -33,7 +33,30 @@
                 <span class="badge-count">1</span>
             </li>
         </ul>
+
+        <div class="nav-item" id="nav-hamburger-button">
+            <span class="material-icons-outlined">
+                menu
+            </span>
+        </div>
     </nav>
+    <ul class="nav-list nav-hamburger display-none" id="nav-hamburger">
+        <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Products</a>
+        </li>
+        <li class="badge nav-item">
+            <a class="nav-link" href="#">Profile</a>
+        </li>                
+        <li class="badge nav-item">
+            <a class="nav-link" href="#">Wishlist</a>
+        </li>
+        <li class="badge nav-item">
+            <a class="nav-link" href="#">Cart</a>
+        </li>
+    </ul>
     <main class="content-body landing-page">
         <section class="landing-page-content">
             <aside class="side-content">
@@ -233,15 +256,6 @@
         <section class="footer-links-section">
             <section class="footer-section">
                 <div class="footer-title">Categories</div>
-                <ul class="footer-link-group">
-                    <li>Link1</li>
-                    <li>Link1</li>
-                    <li>Link1</li>
-                    <li>Link1</li>
-                </ul>
-            </section>
-            <section class="footer-section">
-                <div class="footer-title">Sitemap</div>
                 <ul class="footer-link-group">
                     <li>Link1</li>
                     <li>Link1</li>
