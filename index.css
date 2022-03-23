@@ -49,7 +49,7 @@ body{
     padding: 1rem 1rem 1rem 4rem;
 }
 
-.content-body.landing-page {
+/* .content-body.landing-page {
     display: flex;
     flex-direction: column;
     margin: 10rem 4rem;
@@ -60,9 +60,10 @@ body{
     flex-direction: column;
     margin: 8rem 8rem;
     height: 100%;
-}
+    width: 100%;
+} */
 
-.landing-page-content {
+/* .landing-page-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -72,7 +73,7 @@ body{
 .landing-page-content .side-image {
     width: 45%;
     object-fit: contain;
-}
+} */
 
 .section-body {
     margin: 1.5rem;
@@ -191,7 +192,7 @@ body{
     background-color: var(--color-brn-500);
 }
 
-.side-content {
+/* .side-content {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -204,7 +205,7 @@ body{
 
 .side-content .side-content-description {
     font-size: 2rem;
-}
+} */
 
 .card-wishlist {
     right: 3.5rem;
@@ -277,4 +278,277 @@ body{
 hr {
     border-top: 1px solid var(--color-brn-700);
     margin: 0.5rem 0;
+}
+
+.display-none {
+    display: none;
+}
+
+@media only screen and (max-width: 480px){
+    .content-body.landing-page {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .content-body {
+        display: flex;
+        flex-direction: column;
+        margin-top: 8rem;
+        padding: 0 4rem;
+        height: 100%;
+        width: 100%;
+        gap: 4rem;
+    }
+
+    .landing-page-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        gap: 6rem;
+    }
+    
+    .landing-page-content .side-image {
+        width: 75%;
+        object-fit: contain;
+    }
+
+    .side-content {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-left: 1.5rem;
+        flex-basis: 50%;
+        order: 1;
+    }
+    
+    .side-content .side-content-header {
+        font-size: 3rem;
+        font-weight: 600;
+    }
+    
+    .side-content .side-content-description {
+        font-size: 2rem;
+    }
+
+    .footer-links-section {
+        display: none;
+    }
+
+    .nav-search {
+        display: none;
+    }
+
+    .nav-icons {
+        display: none;
+    }
+
+    .nav {
+        gap: 3rem;
+        padding: 0 6rem;
+    }
+
+    .footer-body {
+        justify-content: center;
+    }
+
+    .btn-fill {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 720px) and (min-width: 480px){
+
+    .content-body.landing-page {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .content-body {
+        display: flex;
+        flex-direction: column;
+        margin-top: 8rem;
+        padding: 0 4rem;
+        height: 100%;
+        width: 100%;
+        gap: 4rem;
+    }
+
+    .landing-page-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        gap: 6rem;
+    }
+    
+    .landing-page-content .side-image {
+        width: 75%;
+        object-fit: contain;
+    }
+
+    .side-content {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-left: 3rem;
+        flex-basis: 50%;
+        order: 1;
+    }
+    
+    .side-content .side-content-header {
+        font-size: 3rem;
+        font-weight: 600;
+    }
+    
+    .side-content .side-content-description {
+        font-size: 2rem;
+    }
+
+    .nav {
+        gap: 3rem;
+        padding: 0 6rem;
+    }
+
+    .nav-search {
+        display: none;
+    }
+
+    .nav-list {
+        gap: 3rem;
+    }
+    
+    .nav-icons {
+        display: none;
+    }
+
+    .nav-hamburger {
+        align-items: center;
+        height: 100%;
+        justify-content: center;
+        position: fixed;
+        width: 100%;
+        z-index: 4;
+        background-color: var(--color-brn-100);
+        overflow: hidden;
+        top: 7rem;
+    }
+
+    .footer-body {
+        flex-direction: column;
+        gap: 4rem;
+    }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 720px){
+
+    .content-body.landing-page {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .content-body {
+        display: flex;
+        flex-direction: column;
+        margin-top: 8rem;
+        padding: 0 2rem;
+        height: 100%;
+        width: 100%;
+    }
+
+    .landing-page-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        gap: 3rem;
+    }
+    
+    .landing-page-content .side-image {
+        width: 45%;
+        object-fit: contain;
+    }
+
+    .side-content {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-left: 8rem;
+        flex-basis: 50%;
+    }
+    
+    .side-content .side-content-header {
+        font-size: 3rem;
+        font-weight: 600;
+    }
+    
+    .side-content .side-content-description {
+        font-size: 2rem;
+    }
+
+    .footer-body {
+        padding: 5rem 5rem;
+    }
+
+    .footer-links-section {
+        gap: 0;
+    }
+
+    #nav-hamburger-button {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+
+    .content-body.landing-page {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .content-body {
+        display: flex;
+        flex-direction: column;
+        margin-top: 8rem;
+        padding: 0 4rem;
+        height: 100%;
+        width: 100%;
+    }
+
+    .landing-page-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    .landing-page-content .side-image {
+        width: 45%;
+        object-fit: contain;
+    }
+
+    .side-content {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-left: 8rem;
+        flex-basis: 50%;
+    }
+    
+    .side-content .side-content-header {
+        font-size: 3.5rem;
+        font-weight: 600;
+    }
+    
+    .side-content .side-content-description {
+        font-size: 2rem;
+    }
+
+    #nav-hamburger-button {
+        display: none;
+    }
 }
