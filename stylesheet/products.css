@@ -124,3 +124,22 @@
     background-color: var(--color-brn-500);
     cursor: pointer;
 }
+
+.rating .material-icons-outlined {
+    font-size: 1.8rem;
+}
+
+@media only screen and (max-width: 480px){
+    .products-body {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 720px) and (min-width: 480px){
+    .products-body {
+        flex-direction: column;
+    }
+    .filters-body {
+        margin: 0 5rem;
+    }
+}
