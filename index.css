@@ -49,32 +49,6 @@ body{
     padding: 1rem 1rem 1rem 4rem;
 }
 
-/* .content-body.landing-page {
-    display: flex;
-    flex-direction: column;
-    margin: 10rem 4rem;
-}
-
-.content-body {
-    display: flex;
-    flex-direction: column;
-    margin: 8rem 8rem;
-    height: 100%;
-    width: 100%;
-} */
-
-/* .landing-page-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.landing-page-content .side-image {
-    width: 45%;
-    object-fit: contain;
-} */
-
 .section-body {
     margin: 1.5rem;
     display: flex;
@@ -191,21 +165,6 @@ body{
 .nav-item .badge-count {
     background-color: var(--color-brn-500);
 }
-
-/* .side-content {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    margin-left: 4rem;
-}
-
-.side-content .side-content-header {
-    font-size: 5rem;
-}
-
-.side-content .side-content-description {
-    font-size: 2rem;
-} */
 
 .card-wishlist {
     right: 3.5rem;
