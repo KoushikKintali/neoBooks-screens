@@ -12,8 +12,10 @@ neoBooks is an ECommerece website specially for books.This repository contains o
 * [Cart Page](https://neobooks-screens.netlify.app/pages/cart.html)
 ![neoBooks-cart-page](https://user-images.githubusercontent.com/44541750/160040641-07020dd2-419f-4d8a-a656-f1cf32577220.gif)
 * [Signin Page](https://neobooks-screens.netlify.app/pages/signin.html)
+
 ![image](https://user-images.githubusercontent.com/44541750/160040691-9f4df829-4eae-41ad-88ad-4772ca154517.png)
 * [Signup Page](https://neobooks-screens.netlify.app/pages/signup.html)
+
 ![image](https://user-images.githubusercontent.com/44541750/160040732-2cf7b1b6-c1d5-42f8-9308-0a0aaee9c914.png)
 
 ## Acknowledgements
